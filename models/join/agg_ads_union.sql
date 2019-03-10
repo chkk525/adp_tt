@@ -35,8 +35,7 @@ SELECT
 date, network , os, campaign, cid, installs, applications, mynumber, confirmnumbers, complete, cost
 , "snads" as datasource
 FROM
-    {{ref
-('snads_proc2')}}
+    {{ref('snads_proc2')}}
 
 UNION ALL
 

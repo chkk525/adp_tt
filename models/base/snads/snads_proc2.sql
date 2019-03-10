@@ -36,5 +36,5 @@ select
     0 as complete,
     cost
 from
-    asa_proc2
+    snads_proc2
 order by date desc 

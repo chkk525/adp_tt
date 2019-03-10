@@ -14,8 +14,7 @@ with
     when lower(adgroup) like "%cid%" then  SAFE.SUBSTR(adgroup, 1,STRPOS(lower(adgroup),"cid")+8)  
     else campaign
   end as campaign_short
-        from {{ref
-     ('asa_proc')}}    
+        from {{ref('asa_proc')}}    
 )
 
 

@@ -32,6 +32,15 @@ FROM
 UNION ALL
 
 SELECT
+date, network , os, campaign, cid, installs, applications, mynumber, confirmnumbers, complete, cost
+, "snads" as datasource
+FROM
+    {{ref
+('snads_proc2')}}
+
+UNION ALL
+
+SELECT
 date,  network , os, campaign, cid, installs, applications, mynumber, confirmnumbers, complete, cost
 ,"other_web" as datasource 
 FROM

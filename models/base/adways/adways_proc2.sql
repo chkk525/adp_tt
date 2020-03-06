@@ -1,5 +1,5 @@
 with
-    asa_proc2
+    adways_proc2
     as
     (
         select

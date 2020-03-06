@@ -20,7 +20,7 @@ with
 
 select
     date,
-    netork as network ,
+    network as network ,
     campaign_short as campaign,
     case 
    when lower(campaign_short) like "%_ios_%" then "ios"

@@ -40,6 +40,15 @@ FROM
 UNION ALL
 
 SELECT
+date, network , os, campaign, cid, installs, applications, mynumber, confirmnumbers, complete, cost
+, "adways" as datasource
+FROM
+    {{ref('adways_proc2')}}
+
+
+UNION ALL
+
+SELECT
 date,  network , os, campaign, cid, installs, applications, mynumber, confirmnumbers, complete, cost
 ,"other_web" as datasource 
 FROM
